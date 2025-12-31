@@ -10,7 +10,7 @@ Search tools are becoming ubuqitous in LLM chat interfaces—ChatGPT, Gemini, an
 
 This tool takes a different approach: every request flows through the [Tor](https://www.torproject.org/) network and browser, which routes your requests through an anonymity network and makes your traffic indistinguishable from millions of other users.
 
-<install video placeholder>
+https://github.com/user-attachments/assets/6ba6fb7e-0f19-4d96-8989-54a0963a8dd9
 
 ## Installation
 
