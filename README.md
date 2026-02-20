@@ -1,4 +1,4 @@
-> 🎉 Tor Search MCP v2 has been released! 
+> 🎉 Tor Search MCP v2 has been released! [View the update notes here.](https://gist.github.com/maximilianromer/ab4bc48ffdda46605d45c4097e3c4223)
 
 # Tor Search MCP
 
