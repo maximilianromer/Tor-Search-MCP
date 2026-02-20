@@ -4,6 +4,8 @@
 
 **Absolutely anonymous knowledge retrieval** for your LLM: the world's first [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that exposes tools to search the web and fetch pages anonymously through [Tor](https://www.torproject.org/). Search results come from DuckDuckGo, and page content is retrieved through an actual Tor Browser instance, preserving the universal fingerprint that makes Tor users indistinguishable from one another.
 
+<img width="944" height="626" alt="image" src="https://github.com/user-attachments/assets/3fe368e6-6cfb-459e-876b-7a5ae369239f" />
+
 ## Why this exists
 
 Millions of people use local LLMs through apps like [LM Studio](https://lmstudio.ai/) or [Ollama](https://ollama.com/). Running models locally offers an extremely private and low-cost way to access information, explore ideas, and automate computation. 
@@ -122,19 +124,19 @@ The `installer.py` handles per-platform adjustment automatically.
 
 ### Tool Details
 
-`**get_sources(queries: list[str])**`
+**`get_sources(queries: list[str])`**
 
 Accepts 1-3 search queries. Multiple queries are useful when a topic could be phrased different ways or spans multiple concepts. Results are deduplicated by URL and indexed linearly (1-15). This tool description includes the current date, helping your LLM formulate time-aware queries and evaluate result recency.
 
 Returns Markdown-formatted results grouped by query, with titles, URLs, and truncated snippets.
 
-`**fetch_pages(indexes: list[int])**`
+**`fetch_pages(indexes: list[int])`**
 
 Fetches up to 5 pages by their index numbers from the most recent search. Can only be called once per search—this prevents unbounded fetching and encourages the LLM to choose wisely based on snippets and source credibility.
 
 Returns extracted and cleaned text content (via [Trafilatura](https://github.com/adbar/trafilatura)) for each page.
 
-`**fetch_specific_page(url: str)**`
+**`fetch_specific_page(url: str)`**
 
 Fetches a single URL directly, without a preceding search. Primarily intended for when users share a specific link they want analyzed.
 
