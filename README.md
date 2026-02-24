@@ -18,6 +18,8 @@ https://github.com/user-attachments/assets/b9c60c88-46be-4334-9a8b-2d27301e4b3a
 
 ## Installation
 
+> ⚡ Install quickly by pasting [this prompt](https://gist.githubusercontent.com/maximilianromer/343113ac73aa393e00934d5cdf17bca9/raw/b656faf47cdaea9733160d16363fb6ca715d32cd/Tor%2520Search%2520MCP%2520Agentic%2520Installer.md) into Claude Code, Codex, or any other agent of choice.
+
 ### Prerequisites
 
 **Download** Python 3.11+. Check if you have it installed by running in your terminal:
